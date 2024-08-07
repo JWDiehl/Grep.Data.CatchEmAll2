@@ -22,9 +22,7 @@ grep "wart" filescan_00.4 > wart.txt
 
 
 ### b)
-
-
-
+txt files in /captured directory
 
 ### c)
 
@@ -32,26 +30,32 @@ grep -hoP "ivys|jigg|meow|pika" captured/*.txt | sort | uniq | wc -l
 
 
 
-
-
-
-
-
-
-
-
-
-
 # Part 2
 ### a)
-
-
-
-
-
+jon@Zipcoders-MacBook-Pro-99 captured % ls -l | grep "^-" | wc -l
+      16
+      Should be 15 - "instructions" is not a pokemon
 
 ### b)
 
+jon@Zipcoders-MacBook-Pro-99 captured % find . -name '*.txt' | xargs wc -l
+      38 ./blastoise.txt
+      34 ./squi.txt
+      30 ./bulbasaur.txt
+      40 ./charizard.txt
+      40 ./beedrill.txt
+      38 ./butterfree.txt
+       1 ./instruction.txt
+       0 ./jigg.txt
+      37 ./psyd.txt
+      37 ./wart.txt
+      40 ./pika.txt
+      32 ./venu.txt
+      33 ./ivys.txt
+      36 ./charmander.txt
+      37 ./charmeleon.txt
+      33 ./meow.txt
+     506 total
 
 
 
